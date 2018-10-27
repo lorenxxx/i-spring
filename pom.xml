@@ -10,14 +10,37 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
     </properties>
 
     <dependencies>
+        <!-- Spring核心容器 start -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.9.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
+        <!-- Spring核心容器 end -->
+
+        <!-- Spring AOP start -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.10</version>
+        </dependency>
+        <!-- Spring AOP end -->
     </dependencies>
 
     <build>
