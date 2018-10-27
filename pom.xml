@@ -41,6 +41,14 @@
             <version>1.8.10</version>
         </dependency>
         <!-- Spring AOP end -->
+
+        <!-- 其他 start -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <!-- 其他 end -->
     </dependencies>
 
     <build>
