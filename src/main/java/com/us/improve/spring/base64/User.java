@@ -48,4 +48,13 @@ public class User {
         this.gmtCreate = gmtCreate;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gmtCreate=" + gmtCreate +
+                '}';
+    }
+
 }
