@@ -7,7 +7,7 @@ package com.us.improve.spring.ioc;
  * @Date 2018/12/8 16:02
  * @Version 1.0
  **/
-public class User {
+public class User extends Person {
 
     private String name;
 
@@ -20,6 +20,7 @@ public class User {
     }
 
     public User(String name, String password, Car car) {
+        super("CHN");
         this.name = name;
         this.password = password;
         this.car = car;
