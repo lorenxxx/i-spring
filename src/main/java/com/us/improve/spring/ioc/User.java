@@ -13,4 +13,25 @@ public class User {
 
     private String password;
 
+    private Car car;
+
+    public User() {
+
+    }
+
+    public User(String name, String password, Car car) {
+        this.name = name;
+        this.password = password;
+        this.car = car;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", car=" + car +
+                '}';
+    }
+
 }

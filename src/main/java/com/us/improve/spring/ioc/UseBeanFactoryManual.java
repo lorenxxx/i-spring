@@ -18,6 +18,12 @@ public class UseBeanFactoryManual {
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
         reader.loadBeanDefinitions(res);
+
+        User user = factory.getBean("user", User.class);
+        System.out.println(user);
+
+        Car car = factory.getBean("car", Car.class);
+        System.out.println(car);
     }
 
 }
