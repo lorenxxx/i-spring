@@ -46,4 +46,8 @@ public class Car {
                 '}';
     }
 
+    public void init() {
+        this.type = "R8";
+    }
+
 }
