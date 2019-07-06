@@ -12,6 +12,7 @@ public class Main {
 
         AwareService awareService = context.getBean(AwareService.class);
         awareService.outputResult();
+        awareService.display();
 
         context.close();
     }
