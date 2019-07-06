@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AwareConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
         MyAware awareService = context.getBean(MyAware.class);
         awareService.outputResult();

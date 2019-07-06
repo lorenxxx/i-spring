@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("com.us.improve.spring.aware")
-public class AwareConfig {
+public class Config {
 
 
 
