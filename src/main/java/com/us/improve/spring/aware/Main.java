@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AwareConfig.class);
 
-        AwareService awareService = context.getBean(AwareService.class);
+        MyAware awareService = context.getBean(MyAware.class);
         awareService.outputResult();
         awareService.display();
 
