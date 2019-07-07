@@ -22,6 +22,20 @@
         </dependency>
         <!-- Spring核心容器 end -->
 
+        <!-- Spring Web start -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- Spring Web end -->
+
         <!-- Spring AOP start -->
         <dependency>
             <groupId>org.springframework</groupId>
