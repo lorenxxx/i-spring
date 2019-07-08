@@ -11,7 +11,7 @@ import org.springframework.core.io.ClassPathResource;
  * @Date 2018/12/8 14:56
  * @Version 1.0
  **/
-public class UseBeanFactoryManual {
+public class Main {
 
     public static void main(String[] args) {
         ClassPathResource res = new ClassPathResource("beans.xml");
