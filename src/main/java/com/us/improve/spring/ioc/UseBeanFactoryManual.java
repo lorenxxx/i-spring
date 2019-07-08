@@ -24,6 +24,12 @@ public class UseBeanFactoryManual {
 
         Car car = factory.getBean("car", Car.class);
         System.out.println(car);
+
+        echo(() -> {return "123";});
+    }
+
+    public static void echo(ISay say) {
+        System.out.println(say.introduce());
     }
 
 }

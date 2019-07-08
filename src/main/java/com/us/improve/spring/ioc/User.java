@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date 2018/12/8 16:02
  * @Version 1.0
  **/
-public class User extends Person {
+public class User extends Person implements ISay {
 
     private String name;
 
@@ -66,6 +66,11 @@ public class User extends Person {
                 ", password='" + password + '\'' +
                 ", car=" + car +
                 '}';
+    }
+
+    @Override
+    public String introduce() {
+        return "Introduce: " + toString();
     }
 
 }
