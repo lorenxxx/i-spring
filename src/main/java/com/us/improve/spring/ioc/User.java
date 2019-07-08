@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date 2018/12/8 16:02
  * @Version 1.0
  **/
-public class User extends Person implements ISay {
+public class User {
 
     private String name;
 
@@ -23,13 +23,11 @@ public class User extends Person implements ISay {
     }
 
     public User(String name, String password) {
-        super("CHN");
         this.name = name;
         this.password = password;
     }
 
     public User(String name, String password, Car car) {
-        super("CHN");
         this.name = name;
         this.password = password;
         this.car = car;
@@ -66,11 +64,6 @@ public class User extends Person implements ISay {
                 ", password='" + password + '\'' +
                 ", car=" + car +
                 '}';
-    }
-
-    @Override
-    public String introduce() {
-        return "Introduce: " + toString();
     }
 
 }
